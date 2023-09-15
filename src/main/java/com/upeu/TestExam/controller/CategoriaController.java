@@ -18,15 +18,15 @@ public class CategoriaController {
     CategoriaService categoriaService;
 
     @GetMapping
-    public ResponseEntity getCategoria(){
+    public ResponseEntity<List<Categoria>> getCategoria(){
         List<Categoria> list = categoriaService.listAllCategoria();
-        return new ResponseEntity(list, HttpStatus.OK);
+        return ResponseEntity.ok().body(list);
     }
 
     @PostMapping
-    public ResponseEntity<Object>saveCategoria(@RequestBody Categoria categoria) {
+    public ResponseEntity<Object> saveCategoria(@RequestBody Categoria categoria) {
         categoriaService.saveCategoria(categoria);
-        return new ResponseEntity(HttpStatus.OK);
+        return ResponseEntity.ok().body("Ok");
     }
     @DeleteMapping ("/{id}")
     public ResponseEntity deleteCategoria(@PathVariable Long id) {

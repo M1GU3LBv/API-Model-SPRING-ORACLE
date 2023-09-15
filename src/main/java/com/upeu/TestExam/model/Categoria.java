@@ -2,13 +2,16 @@ package com.upeu.TestExam.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Setter;
 
-import java.util.List;
+
+
 
 @Entity
 @Data
 @Table(name = "categoria")
-public class Categoria {
+public class
+Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
