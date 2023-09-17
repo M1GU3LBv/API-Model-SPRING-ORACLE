@@ -2,11 +2,6 @@ package com.upeu.TestExam.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Setter;
-
-
-
-
 @Entity
 @Data
 @Table(name = "categoria")
