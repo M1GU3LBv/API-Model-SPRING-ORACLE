@@ -8,6 +8,6 @@ Public model to create springboot api to any case structured and 100% updated.
 Technologies used on:
 -Spring Boot
 -JPA
--Lombol
+-Lombok
 -Oracle
 -Docker (easy to dockerize)
